@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "organizador-arquivos-cli"
+version = "1.0.0"
+description = "CLI Python para organizar arquivos por extensão e categoria"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Organizador de Arquivos CLI" }]
+keywords = ["cli", "arquivos", "organização", "python"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+organizar-arquivos = "organizador_arquivos.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["organizador_arquivos*"]
+
+[tool.pytest.ini_options]
+# Os testes usam unittest e não dependem de pytest; esta seção só facilita descoberta.
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
