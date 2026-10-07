@@ -1,4 +1,5 @@
 # Organizador de Arquivos CLI
+[![CI](https://github.com/Mateusmfmd/organizador-arquivos-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Mateusmfmd/organizador-arquivos-cli/actions/workflows/ci.yml)
 
 CLI em **Python 3.11**, sem dependências de runtime, para organizar uma pasta por extensão e categoria. O projeto prioriza operação segura: oferece `--dry-run`, registra logs, trata falhas por arquivo, evita links simbólicos e é idempotente.
 
